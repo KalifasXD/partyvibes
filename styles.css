@@ -1,0 +1,1159 @@
+/* Default styles */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  font: normal 300 13px / 24px "Comfortaa", Helvetica, Arial, Verdana, sans-serif;  
+}
+
+
+#neon {
+  margin: auto;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12vh;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#neon .word {
+  color: var(--lights);
+  text-shadow: 
+        -2px -2px 0 #0a3049,  
+        2px -2px 0 #0a3049,
+        -2px 2px 0 #0a3049,
+        2px 2px 0 #0a3049; /* Black stroke effect */
+  filter: brightness(1);
+}
+
+#neon::after {
+  /* LINE BELOW TEXT */
+  content: ""; /* Required for the pseudo-element */
+  display: block; /* Makes the line appear as a block */
+  width: 60%; /* Adjust the width of the line */
+  height: 3px; /* Adjust the height (thickness) of the line */
+  margin: 40px auto; /* Center the line and add spacing */
+  border-radius: 2px; /* Optional: adds rounded edges to the line */
+  background: linear-gradient(to right, 
+    rgba(179, 94, 44, 0) 0%,        /* Transparent on the left */
+    #0a3049 10%,       /* Fully opaque */
+    #0a3049 90%,       /* Fully opaque */
+    rgba(179, 94, 44, 0) 100%);
+}
+
+
+@keyframes flicker{
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+    text-shadow:
+        -0.2rem -0.2rem 1rem #ff80ce,
+        0.2rem 0.2rem 1rem #ff80ce,
+        0 0 2rem var(--lights),
+        0 0 4rem var(--lights),
+        0 0 6rem var(--lights),
+        0 0 8rem var(--lights),
+        0 0 10rem var(--lights);       
+}
+
+20%, 24%, 55% {        
+    text-shadow: none;
+    box-shadow: none;
+}
+}
+
+.reviews-section {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 50px;
+  color: white;
+  border: 1px solid #ff00aa;
+  border-top: 0;
+}
+
+.reviews-section h2 {
+  color: #ff00aa;
+  font-size: 2rem;
+}
+
+.reviews-section h3 {
+  font-size: 2.5rem;
+}
+
+.review-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.review-container {
+  width: 800px;
+  position: relative;
+}
+
+.review-item {
+  display: none; /* All reviews hidden initially */
+  text-align: center; 
+  line-height: 30px;
+}
+
+.review-item img {
+  width: 100px;
+  height: 100px;
+  margin: 30px 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-item p {
+  font-size: clamp(10px, 1vw + 1rem, 16px);
+  font-style: italic;
+}
+
+.rating {
+  margin: 10px 0;
+  color: #ff00aa;
+  font-size: 30px;
+}
+
+.prev-button, .next-button {
+  background-color: #88005b;
+  color: white;
+  border: none;
+  margin: 0 10vw;
+  cursor: pointer;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.prev-button:hover, .next-button:hover {
+  background-color: #ff00aa;
+  font-size: 25px;
+}
+
+.more-reviews {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #88005b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.more-reviews:hover {
+  background-color: #ff00aa;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/* QUICK LINKS */
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items */
+  gap: 20px;
+  width: 100%; /* Full width */
+  padding: 40px 0;
+  border: 1px solid #ff00aa;
+}
+
+.link-item {
+  flex-grow: 1; /* Allow items to grow and capture space */
+  max-width: 350px; /* Limit the max width */
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  height: 470px; /* Make sure the div takes the full height of its parent */
+  padding: 10px; /* Optional: add some padding */
+  position: relative; /* Required for absolute positioning of the link */
+}
+
+.link-item img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.link-item h3 {
+  margin-top: 10px;
+}
+
+.link-item p {
+  font-size: 14px;
+  flex-grow: 1; /* Allow paragraph to take up remaining space */
+  margin: 10px 0; /* Margin above and below the paragraph */
+}
+
+.link-item a {
+  display: inline-block;
+  margin-top: auto; /* Push the link to the bottom */
+  width: 50%; /* Width of the link */
+  background-color: #88005b; /* Background color for the link */
+  color: white; /* Text color */
+  padding: 5px 0px; /* Padding for the link */
+  text-decoration: none; /* Remove underline */
+  text-align: center; /* Center the text */
+  margin-left: auto; /* Center the link */
+  margin-right: auto; /* Center the link */
+}
+
+
+.link-item a:hover {
+  background-color: rgb(255, 0, 170);
+}
+
+.link-item p, .link-item h3 {
+  color:white;
+}
+
+
+/* Hero section styles */
+
+.hero {
+  text-align: center;
+  padding: 200px 0;
+  background-color: #e6e6e6;
+  color:white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10vh;
+
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.slide {
+  box-shadow: 0 50px 510px rgba(0, 0, 0, 1), 0 -50px 510px rgba(0, 0, 0, 1);
+  box-shadow: 50px 0 510px rgba(0, 0, 0, 1), -50px 0 510px rgba(0, 0, 0, 1);
+}
+
+.contact-info {
+  line-height: 1.7;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border: 1px solid #ff00aa;
+  max-width: 80vw;
+  margin: 0px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-info p {
+  text-align: justify;
+  margin: 0;
+}
+/*
+.contact-info:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+  transform: translateY(-5px);
+} */
+
+
+
+@media (max-width: 768px) {
+  .contact-info {
+    width: 100%; /* Ensures the box doesn’t stretch too far on mobile */
+    max-width: 90%; /* Keep it within a reasonable size on smaller screens */
+    padding: 20px;
+    box-shadow: none; /* Remove shadow on smaller screens */
+    text-align: center; /* Center text */
+  }
+
+  .contact-info p {
+    font-size: 18px; /* Slightly smaller text for better readability on small screens */
+  }
+}
+
+/* Background image styles */
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgfull {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("Wedding_Index.webp");
+  min-height: 100vh;
+}
+
+.bgimg-2 {
+  background-image: url("PageBackground.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-3 {
+  background-image: url("Baptize_Index.webp");
+  min-height: 100vh;
+}
+
+.bgimg-4 {
+  background-image: url("paradox_4.webp");
+  min-height: 800px;
+}
+
+.bgimg-5 {
+  background-image: url("paradox_5.webp");
+  min-height: 800px;
+}
+
+.bgimg-6 {
+  background-image: url("gallery5.webp");
+  min-height: 800px;
+}
+
+.bgfull {
+  background-image: var(--bgimage);
+}
+
+.flexbox-caption {
+  position: relative;
+  max-width: 100%;
+  width: 70%;
+  margin: 0 auto !important; /* Center the .flexbox-caption horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexbox-caption .caption {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.flexbox-caption .caption .border {
+  height: 100px;
+  max-height: 100px;
+  position: relative;
+  display: flex;
+  margin-bottom: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 2em;
+  font-size: 25px;
+  display: inline-block;
+  width: 90%;
+  border: 1px solid #ff00aa;
+  position: absolute; /* Use absolute positioning */
+  top: 50%;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+}
+
+/* Content section styles */
+
+.indentation {
+  padding: 0em 15vw;
+  z-index: 9999;
+}
+
+.content {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.content h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.navbarOptions {
+  color: var(--MenuTextColor) !important;
+  line-height: 26px;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+/* Footer styles */
+
+footer {
+  color: #fff;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* Add this to center vertically */
+  align-items: center;
+  width: 100%;
+  position: absolute !important;
+}
+
+.footer-column {
+  position: relative;
+  top:42.5vh;
+  margin: 0 5em;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media li:last-child {
+  margin-right: 0;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  position: relative;
+  top:55.5vh;
+}
+
+.FooterBackground {
+  height: auto;
+  width: 100%;
+}
+
+.carousel-inner img {
+  height: 100vh !important;
+  max-height: 100vh !important;
+}
+
+.PartyVibes_Logo {
+    width: 350px;
+    height: 104px;
+    /*width: 500px;
+    height: 286px;*/
+  }
+
+.MusicEvents_Logo {
+  width: 300px;
+  height: 170px;
+}
+
+.PhreindsPhotography_Logo {
+  width: 384px;
+  height: 65px;
+}
+
+.custom-paragraph-mobile {
+    color: white;
+    padding: 0 4em;
+  }
+
+.biography-note-phriends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px;
+  box-shadow: 0 0 20px black;
+  border-radius: 25px;
+  height: 70vh !important;
+}
+
+.biography-note-column {
+  padding: 5em 2em;
+  max-width: 100%; /* Set your desired max width */
+  display: flex;
+  align-items: center;
+}
+
+.biography-note-column img {
+  max-width: 50%; /* Make sure the image doesn't exceed its container */
+  height: auto;
+  margin-right: 2em;
+  border: 2px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px black;
+}
+
+.biography-note-column p {
+  flex: 1; /* Make the text take up the remaining space */
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+
+ .biography-note-phriends {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px;
+  box-shadow: 0 0 20px black;
+  border-radius: 25px;
+  padding: 2em; /* Adjust padding for smaller screens */
+}
+
+.biography-note-column {
+  display: flex;
+  flex-direction: column; /* Change to column direction for mobile */
+  align-items: center;
+  text-align: center;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.biography-note-column img {
+  max-width: 90%; /* Make the image take up the full width */
+  width: 90%;
+  margin: 1em 0;
+  border: 2px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px black;
+}
+
+.biography-note-column p {
+  flex: 1; /* Make the text take up the remaining space */
+  max-width: 100%; /* Ensure text takes up the full width */
+  font-size: 0.6em; /* Adjust font size to fit the container */
+  line-height: 1.4; /* Adjust line height for better readability */
+}
+
+
+
+
+
+  .hero {
+    padding: 100px 0;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .carousel-inner img, .gif {
+    height: 100vh !important;
+    max-height: none !important;
+    object-fit: cover;
+  }
+
+  .carousel-content .custom-alignment-3 {
+    top: 0% !important;
+    left: 50% !important;
+  }
+
+  .carousel-item .carousel-content {
+    font-size: 1em !important;
+    left: 50% !important;
+    margin: 0 0 0 -10em;
+  }
+
+  .custom-paragraph-mobile {
+    padding: 30px !important;
+  }
+
+  .carousel .carousel-control-prev,
+  .carousel .carousel-control-next,
+  .carousel .carousel-indicators {
+    opacity: 1 !important;
+    transform: translateX(0) scale(1);
+  }
+
+  .PartyVibes_Logo {
+    width: 150px !important;
+    height: 40px !important;
+  }
+
+  .MusicEvents_Logo {
+    width: 100px !important;
+    height: 50px !important;
+  }
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6,
+  .bgfull {
+    min-height: 800px !important;
+  }
+
+  .caption span.border {
+    padding: 12px !important;
+    font-size: 1em !important;
+    height: auto !important;
+  }
+
+  .caption {
+    width: 100% !important;
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .FooterBackground {
+    height: 60vh !important;
+    max-height: none !important;
+    object-fit: cover;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .tabs {
+    flex-direction: column; /* Stack the tabs vertically on small screens */
+  }
+
+  .tab {
+    width: 100%; /* Take the full width on small screens */
+    margin-bottom: 10px;
+  }
+
+  .card {
+    max-width: 100%; /* Allow the card to take the full width on smaller screens */
+  }
+
+  .boxes {
+    flex-direction: column;
+    height: auto !important;
+  }
+
+  .title {
+    font-size: 1.5em !important;
+  }
+
+  .biography-container {
+    flex-direction: column;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .biography-card {
+    width: 100%;
+    margin: 1em 0 !important;
+ }
+
+  .bio {
+    font-size: 0.9em !important;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .polaroid_item {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+}
+
+.navbar {
+  position: absolute; /* Used for positing the navbar while maintaining the empty background color and properties*/
+}
+
+.carousel-content {
+  position: absolute;
+  padding: 4em 0em;
+  top: 0%;
+  left: 60%;
+  margin: 0 0 0 -22.5em;
+  font: 700 2.4em !important;
+  display: block;
+  font-size: 2.2vw;
+  text-shadow: 0 0 800px rgba(0,0,0,1);
+  /*
+  background: url("textbackground.jpg") repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden; */
+}
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.custom-alignment-3 {
+  margin: 0 0 0 -10em;
+  left: 80% !important;
+  font-size: 1.9vw !important;
+  top: 5%;
+  text-align: left;
+}
+
+/* CARD */
+
+.container {
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap; /* Add this line to allow cards to wrap on smaller screens */
+  justify-content: center; /* Add this line to center the cards horizontally */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 600px; /* 525px */
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(40deg, #000, #000); /* Add this line for the blackish gradient */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face.face1 {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.simple {
+  background-color: white;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intermediate {
+  background-color: white;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advanced {
+  background-color: white;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.face.face2 {
+  transition: 0.5s;
+  overflow: hidden; /* Add this line to hide overflowed content */
+}   
+         
+
+.face.face2 h2 {
+  font-size: min(50vw, calc(0.8em + 0.5vw));
+  text-align: center !important;
+  color: #fff;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  padding:20px;
+  margin: 0; /* Remove the margin to fix the alignment */
+}
+
+.card:hover .face.face2 {
+  height: 60px;
+}
+
+.card:hover .face.face2 h2 {
+  font-size: min(100%, calc(1em + 0.1vw));
+  padding:10px;
+}
+
+.card:nth-child(1) .face.face2 {
+  background-image: linear-gradient(-40deg, #303030 0%, #D5D5D5 100%);
+  border-radius: 15px;
+}
+
+.card:nth-child(2) .face.face2 {
+  background-image: linear-gradient(-40deg, #303030 0%, #D5D5D5 100%);
+  border-radius: 15px;
+}
+
+.card:nth-child(3) .face.face2 {
+  background-image: linear-gradient(-40deg, #303030 0%, #D5D5D5 100%);
+  border-radius: 15px;
+}
+
+.content {
+  background: linear-gradient(40deg, #CC99CC 0%, #383838 100%);
+  border-radius: 15px;
+  height: 100%;
+  padding: 10px;
+  align-text: center;
+}
+
+/* TABS */
+.tab-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%; 
+}
+
+.tab {
+  background-image: linear-gradient(to bottom, rgba(187, 187, 187, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  padding: 15px;
+  text-align: center;
+  width:100%;
+  overflow: initial;
+  font-size: min(100%, calc(0.6em + 0.3vw));
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background: linear-gradient(to bottom, #CC99CC 0%, #4E4E4E 100%);
+  color: black;
+}
+
+.tab-content {
+  background: linear-gradient(40deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 45%, rgba(0, 0, 0, 0.5) 100%);
+  padding: 20px;
+  width: 100%; /* Updated */
+}
+.tab-content #more-information {
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 3vh;
+}
+.Tab-Packets {
+  display: none;
+}
+
+.Tab-Packets.active {
+  display: block;
+}
+
+.Tab-Packets .card {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.Tab-Packets.fade-out .card {
+  opacity: 0;
+}
+
+/* Add the swipe-in animation */
+@keyframes swipeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.Tab-Packets.swipe-in .card {
+  opacity: 0;
+  animation: swipeInFromLeft 0.5s forwards; /* Play the animation and keep the final state */
+  animation-delay: calc(var(--card-index) * 100ms); /* Delay the animation for each card */
+}
+
+/* Reset the transform for even cards */
+.Tab-Packets.swipe-in .card:nth-child(even) {
+  transform: translateX(100%);
+}
+
+/* Show the cards after the animation is completed */
+.Tab-Packets.swipe-in .card.show {
+  opacity: 1;
+}
+
+/* BIO */
+
+.biography-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.biography-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.biography-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    color: white;
+    max-height: 800px !important;
+    margin: 10px  30px;
+    text-align: center;
+}
+.profile-image {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.occupation {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.bio {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Services Packages CSS */
+
+.InitialText {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.25em;
+  margin: 0 24px;
+  text-align: justify;
+}
+
+.gif {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* POLAROID EFFECT */
+
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.polaroid {
+  background: #fff;
+  color: black;
+  padding: 1rem;
+  border: solid; 
+  box-shadow: 0 1rem 1.2rem rgba(0,0,0,0.2);
+}
+
+.polaroid > .polaroid_image {
+  max-width: 100%;
+  height: auto;
+  border: solid;
+}
+
+.polaroid_caption {
+  font-size: 1.8rem;
+  text-align: center;
+  opacity: 0;
+  line-height: 2em;
+}
+
+.polaroid_item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 0rem;
+  filter: grayscale(80%);
+}
+
+.polaroid_item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.polaroid_item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+
+.polaroid_item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+.polaroid_item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+
+.polaroid_item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+.polaroid_item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+
+.polaroid_item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+
+.polaroid_item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+
+.polaroid_item:nth-of-type(3n) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+
+.polaroid_item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+
+.polaroid_item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 2rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
+}
