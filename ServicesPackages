@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Set an unforgettable and dreamy mood for your wedding with Party Vibes by George Mitsos. Professional DJs, top-notch sound equipment, mesmerizing lights, cool effects, and misty smoke machines make each event special! We can even create your wedding song with the help of 4music events! Get in touch with us and let us take care of everything!" />
+  <meta name="description" content="Δημιουργήστε μια αξέχαστη και ονειρική ατμόσφαιρα στον γάμο σας με την Party Vibes by George Mitsos . Επαγγελματίες Djs ,ηχητικός εξοπλισμός,   φωτορυθμικα, εφέ, μηχανές καπνού κάνουν την κάθε εκδήλωση ξεχωριστή!
+  Ακόμα συνθέτουμε για εσάς το γαμήλιο τραγούδι σας σε συνεργασία με την 4music events! Επικοινωνήστε μαζί μας και αφήστε τα όλα σε εμάς!" />
+  <meta name="keywords" content="Wedding, Γάμος, Dj για γάμο, Dj για δεξιώση, Dj για πάρτυ, Party, Karaoke party, Φωτορυθμικά για γάμο, Μηχανή καπνού για γάμο, Party γάμου, Τραγούδι πρώτου χορού, Τραγούδι ζευγαριού, Πρώτος χορός, Γαμήλια δεξίωση, Party vibes, 4music Events, Party Vibes by George Mitsos, George Mitsos" />
+  <title>2023 Party Vibes by George Mitsos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@1,8..30,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css?version=1" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9916958056464058"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="bgfull" style="--bgimage: url('PageBackground.pg'); background-color: #141e27;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <img class="d-block PartyVibes_Logo" src="PartyVibes_Logo.webp"  alt="Second slide">
+      </a>
+      <button class="navbar-toggler bg-transparent" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-center navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle navbarOptions" style="--MenuTextColor: #8acd6e; " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Party Vibes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ServicesPackages.html">Πακέτα Υπηρεσιών</a>
+              <a class="dropdown-item" href="ServicesPackages.html#weddingsong">Σύνθεση Γαμήλιου Τραγουδιού</a>
+              <a class="dropdown-item" href="ServicesPackages.html#whoarewe-partyvibes">Ποιοί Είμαστε</a>
+            </div>
+          </li>
+        <a class="nav-item nav-link navbarOptions" style="--MenuTextColor: #8acd6e; " href="#footer">Επικοινωνία</a>
+        </div>
+      </div>
+    </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="indentation">
+      <br>
+      <br>
+      <p class="InitialText" id="pagestart">Επιλέξτε ένα από τα έτοιμα πακέτα ηχητικής καλυψης για κάθε περίσταση ανάλογα
+        με τις ανάγκες σας.</p>
+      <br>
+      <br>
+      <br>
+      <div class="tab-container">
+        <ul class="tabs">
+          <li class="tab active">Γαμος</li>
+          <li class="tab">Βαφτιση</li>
+          <li class="tab">Parties</li>
+          <li class="tab">Karaoke Party</li>
+          <li class="tab">Εκδηλωσεις</li>
+        </ul>
+        <div class="tab-content">
+          <div class="Tab-Packets active">
+            <!-- Γάμος Πακέτα -->
+            <div class="container">
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="simple">Basic</h2>
+                    <br>
+                    <p class="simple"><b>
+                      <br>Εκτιμώμενη κάλυψη έως 100 άτομα</b><br> 
+                      <br>- 2 ηχεία 15’’ 1300W το καθένα
+                      <br>- Κονσόλα ήχου
+                      <br>- DJ
+                      <br>- 2 φωτορυθμικά με κίνηση wash
+                      <br>- 1 Laser εφέ
+                      <br>- Εγκατάσταση εξοπλισμού από δικό μας τεχνικό
+                      <br><br></p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Basic</h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="intermediate">Standard</h2>
+                    <br>
+                    <p class="simple"><b>
+                      <br>Εκτιμώμενη κάλυψη έως 150-200 άτομα</b><br>
+                      <br>- 4 ηχεία 15’’ 1300W το καθένα
+                      <br>- Κονσόλα ήχου
+                      <br>- DJ
+                      <br>- DJ Booth
+                      <br>- 4 φωτορυθμικά με κίνηση wash
+                      <br>- 2 φωτορυθμικά τύπου Led Par
+                      <br>- 2 Laser εφέ
+                      <br>- 2 μηχανές καπνού
+                      <br>- Εγκατάσταση εξοπλισμού από δικό μας τεχνικό</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Standard</h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="advanced">Premium</h2>
+                    <br>
+                    <p class="simple"><b>
+                      <br>Εκτιμώμενη κάλυψη έως 250-300 άτομα</b><br>
+                      <br>- 4 ηχεία 15’’ 1300W το καθένα
+                      <br>- 2 ηχεία 12’’ 800W το καθένα
+                      <br>- 2 sub 1200W το καθένα
+                      <br>- 2 ασύρματα μικρόφωνα
+                      <br>- Κονσόλα ήχου
+                      <br>- DJ
+                      <br>- DJ Booth
+                      <br>- 6 φωτορυθμικά με κίνηση wash
+                      <br>- 4 φωτορυθμικά τύπου Led Par
+                      <br>- 2 Laser εφέ
+                      <br>- 2 μηχανές καπνού
+                      <br>- 2 μηχανές ξηρού πάγου
+                      <br>- Εγκατάσταση εξοπλισμού από δικό μας τεχνικό</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Premium</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Tab-Packets">
+            <!-- Βάφτιση Πακέτα -->
+            <div class="container">
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="simple">Basic</h2>
+                    <br>
+                    <p class="simple"><b> 
+                      <br>Εκτιμώμενη κάλυψη έως 100 άτομα</b><br>
+                      <br>- 2 ηχεία 15’’ 1300W το καθένα
+                      <br>- Κονσόλα ήχου
+                      <br>- DJ
+                      <br>- 2 φωτορυθμικά με κίνηση wash
+                      <br>- 1 Laser εφέ
+                      <br>- Εγκατάσταση εξοπλισμού από δικό μας τεχνικό</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Basic</h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="intermediate">Standard</h2>
+                    <br>
+                    <p class="simple"><b>
+                      <br>Εκτιμώμενη κάλυψη έως 150-200 άτομα</b><br>
+                      <br>- 4 ηχεία 15’’ 1300W το καθένα
+                      <br>- Κονσόλα ήχου
+                      <br>- DJ
+                      <br>- DJ Booth
+                      <br>- 4 φωτορυθμικά με κίνηση wash
+                      <br>- 2 φωτορυθμικά τύπου Led Par
+                      <br>- 2 Laser εφέ
+                      <br>- 2 μηχανές για μπουρμπουλήθρες
+                      <br>- Εγκατάσταση εξοπλισμού από δικό μας τεχνικό</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Standard</h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="advanced">Premium</h2>
+                    <br>
+                    <p class="simple"><b> 
+                      <br>Εκτιμώμενη κάλυψη έως 250-300 άτομα</b><br>
+                      <br>- 4 ηχεία 15’’ 1300W το καθένα
+                      <br>- 2 ηχεία 12’’ 800W το καθένα
+                      <br>- 2 sub 1200W το καθένα
+                      <br>- Κονσόλα ήχου
+                      <br>- DJ
+                      <br>- DJ Booth
+                      <br>- 6 φωτορυθμικά με κίνηση wash
+                      <br>- 4 φωτορυθμικά τύπου Led Par
+                      <br>- 2 Laser εφέ
+                      <br>- 2 μηχανές για μπουρμπουλήθρες
+                      <br>- Εγκατάσταση εξοπλισμού από δικό μας τεχνικό</p> 
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Premium</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Tab-Packets">
+            <!-- Parties Πακέτα -->
+            <div class="container">
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="simple">Home Party</h2>
+                    <br>
+                    <p class="simple">
+                      <br>- 2 ηχεία 15’’ 1300W το καθένα
+                      <br>- Κονσόλα ήχου
+                      <br>- DJ ( Για 4 ώρες )
+                      <br>- 2 φωτορυθμικά με κίνηση wash
+                      <br>- 1 Laser εφέ
+                      <br>- Εγκατάσταση εξοπλισμού από δικό μας τεχνικό</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Home Party</h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="intermediate">Παιδικό Party</h2>
+                    <br>
+                    <p class="simple">
+                      <br>- 2 ηχεία 15’’ 1300W το καθένα
+                      <br>- Κονσόλα ήχου
+                      <br>- DJ (Για 4 ώρες)
+                      <br>- DJ Booth
+                      <br>- 2 φωτορυθμικά με κίνηση wash
+                      <br>- 2 φωτορυθμικά τύπου Led Par
+                      <br>- 1 Laser εφέ
+                      <br>- 1 μηχανή για μπουρμπουλήθρες
+                      <br>- Εγκατάσταση εξοπλισμού από δικό μας τεχνικό</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Παιδικό Party</h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="advanced">Σχολικό Party</h2>
+                    <br>
+                    <p class="simple">
+                      <br>- 4 ηχεία 15’’ 1300W το καθένα
+                      <br>- Κονσόλα ήχου
+                      <br>- DJ
+                      <br>- DJ Booth
+                      <br>- 4 φωτορυθμικά με κίνηση wash
+                      <br>- 2 φωτορυθμικά τύπου Led Par
+                      <br>- 2 Laser εφέ
+                      <br>- Εγκατάσταση εξοπλισμού από δικό μας τεχνικό</p> 
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Σχολικό Party</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Tab-Packets">
+            <!-- Karaoke Party Πακέτα -->
+            <div class="container">
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="simple">Karaoke Party Standard</h2>
+                    <br>
+                    <p class="simple">
+                      <br>- 2 ηχεία 15’’ 1300W το καθένα
+                      <br>- Μικροφωνική κονσόλα
+                      <br>- 2 φωτορυθμικά τύπου Led Par
+                      <br>- Παρουσιαστής
+                      <br>- DJ
+                      <br>- 2 ασύρματα μικρόφωνα
+                      <br>- Κατάλογος με περισσότερα απο 2000 τραγούδια
+                      <br>- Διάρκεια: 3 ώρες</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Karaoke Party Standard</h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="intermediate">Karaoke Party Premium</h2>
+                    <br>
+                    <p class="simple">
+                      <br>- 2 ηχεία 15’’ 1300W το καθένα
+                      <br>- 2 ηχεία Monitor
+                      <br>- Μικροφωνική κονσόλα
+                      <br>- 2 φωτορυθμικά με κίνηση Wash
+                      <br>- 2 φωτορυθμικά τύπου Led Par
+                      <br>- Παρουσιαστής
+                      <br>- DJ
+                      <br>- Ηχολήπτης
+                      <br>- 6 ασύρματα μικρόφωνα
+                      <br>- Κατάλογος με περισσότερα απο 2000 τραγούδια
+                      <br>- Acoustic Live ( Break 1 for 20 minutes )
+                      <br>- Party DJ Set ( Break 2 for 30 minutes )
+                      <br>- Διάρκεια: 5 ώρες</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Karaoke Party Premium</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Tab-Packets">
+            <!-- Εκδηλώσεις Πακέτα -->
+            <div class="container">
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="simple">Μικροφωνική Κάλυψη Εκδήλωσης Basic</h2>
+                    <br>
+                    <p class="simple">
+                      <br>- 2 ηχεία 15’’ 1300W το καθένα
+                      <br>- Μικροφωνική κονσόλα
+                      <br>- Ηχόληπτης
+                      <br>- Δυνατότητα σύνδεσης έως 4 μικροφώνων
+                      <br>- Βάσεις μικροφώνων
+                      <br>- Δυνατότητα σύνδεσης έως 3 μουσικών οργάνων</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Μικροφωνική Κάλυψη Εκδήλωσης Basic</h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="intermediate">Μικροφωνική Κάλυψη Εκδήλωσης Premium</h2>
+                    <br>
+                    <p class="simple">
+                      <br>- 4 ηχεία 15’’ 1300W το καθένα
+                      <br>- Μικροφωνική κονσόλα
+                      <br>- Ηχόληπτης
+                      <br>- DJ πριν απο την έναρξη και για το τέλος της εκδήλωσης
+                      <br>- Δυνατότητα σύνδεσης έως 6 μικροφώνων
+                      <br>- Βάσεις μικροφώνων
+                      <br>- Δυνατότητα σύνδεσης έως 5 μουσικών οργάνων</p>
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Μικροφωνική Κάλυψη Εκδήλωσης Premium</h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face face1">
+                  <div class="content">
+                    <span class="stars"></span>
+                    <h2 class="advanced">Εγκαίνια Καταστήματος</h2>
+                    <br>
+                    <p class="simple">
+                      <br>- 4 ηχεία 15’’ 1300W το καθένα
+                      <br>- DJ για 3 ώρες
+                      <br>- DJ Booth
+                      <br>- 2 φωτορυθμικά με κίνηση wash
+                      <br>- 2 φωτορυθμικά τύπου Led Par
+                      <br>- 1 Laser εφέ</p> 
+                  </div>
+                </div>
+                <div class="face face2">
+                  <h2>Εγκαίνια Καταστήματος</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p id="more-information">Για περισσότερες πληροφορίες, μπορείτε να μας στείλετε email στο: <b>partyvibes.gm@gmail.com</b> ή να μας καλέσετε στο: <b>6938 950 982</b></p>
+        </div>
+      </div>
+    <br>
+    <div class="contact-info" id="weddingsong">
+      <div class="custom-paragraph-mobile" style="background-color:transparent;padding:50px 80px;text-align: justify;" >
+          <h2 style="text-align:center;"><img src="MusicNote.png" width="32" height="32" style="margin-right: 20px;">Σύνθεση Γαμήλιου Τραγουδιού<img src="MusicNote.png" width="32" height="32" style="margin-left: 20px;"></h2>
+          <br>
+          <br>
+          <h3 style="text-align:center;">Τι σημαίνει αυτό;</h3>
+          <p>
+            Μας αφηγήστε την ιστορία αγάπης σας και οι στιχουργοί μας αρχικά γράφουν τους στίχους του τραγουδιού εμπνευσμένοι από τα λόγια σας . Στη συνέχεια, αφου το ζευγάρι εγκρίνει τους στίχους, αναλαμβάνουν οι συνθέτες μας να ντύσουν το τραγούδι με μουσική. Τέλος αφου έχουμε την τελική σας συγκατάθεση, το τραγούδι ολοκληρώνεται σε επαγγελματικό studio και όταν είναι έτοιμο και ενορχηστρωμένο, γίνεται η τελική ηχογράφηση από επαγγελματία τραγουδιστή.
+            Έτσι σας παραδίδουμε ένα ολοκαίνουριο και εξατομικευμένο τραγουδι που έχει γραφτεί κατα παραγγελία μόνο για εσάς αποτελώντας ένα παντοτινό και υπέροχο ενθύμιο!<br><br>
+            <p style="text-align: center;">Το μόνο που μένει μετά είναι να το χορέψετε την ημέρα του γάμου σας !!!</p></p>
+      </div>
+    </div>  
+    <br>
+    <div class="biography-column" id="whoarewe-partyvibes">
+      <div class="biography-row">
+        <div class="biography-card">
+          <img class="profile-image" src="biografiko_giorgos.jpg">
+          <div class="name">Γιώργος Μητσός</div>
+          <div class="occupation">DJ/Event Manager</div>
+          <div class="bio">
+            <p>Ο Γιώργος Μητσός είναι DJ και ο ιδρυτής της <b>Party vibes By George Mitsos</b>.
+                Με εμπειρία 20 ετών σε εκδηλώσεις, βαφτίσεις, γάμους και party είναι ο άνθρωπος που μπορεί να εγγυηθεί πως θα ετοιμάσει για εσάς ένα ξεχωριστό party με μουσική και χορό μέχρι το πρωί.
+                Έχοντας συλλέξει εμπειρίες από διάφορα clubs της Αθήνας και του Πειραιά καθώς και σε πολλά μεγάλα νησιά, διαθέτει μεγάλη γκάμα ρεπερτορίου και έχει την ικανότητα να ψυχογραφησει τα ακούσματα και τις απαιτήσεις του κοινού. Παράλληλα ως στιχουργός μπορεί να γράψει για κάθε ζευγάρι το δικο τους τραγούδι για τον πρώτο χορό.
+            </p>
+          </div>
+        </div>
+        <div class="biography-card">
+          <img class="profile-image" src="biografiko_giannis.jpg">
+          <div class="name">Γιάννης Κουτσούκης</div>
+          <div class="occupation">Ηχολήπτης/Στιχουργός</div>
+          <div class="bio">
+            <p>Ο Γιάννης Κουτσούκης είναι ο άνθρωπος που χρειάζεται κάθε DJ έτσι ώστε να νιώθει ασφάλεια με τον ήχο μίας εκδηλώσης.
+              Ηχολήπτης για περισσότερα από 20 χρόνια, έχοντας συνεργαστεί στις μεγαλύτερες αθηναϊκές πίστες με τα πιο γνωστά ονόματα του ελληνικού πενταγράμμου.
+              Έχοντας εμπείρια απο πολλές συναυλίες και τηλεοπτικα δρώμενα έχει την ικανότητα να δημιουργήσει ένα άρτιο οπτικοακουστικό αποτέλεσμα σύμφωνα με τις απαιτήσεις του εκάστοτε κτήματος ή αίθουσας ανάλογα πάντα με τον αριθμό των καλεσμένων.
+              Παράλληλα ως στιχουργός μπορεί να γράψει για κάθε ζευγάρι το δικο τους τραγούδι για τον πρώτο χορό.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="biography-column" id="whoarewe-partyvibes">
+      <div class="biography-row">
+        <div class="biography-card">
+          <img class="profile-image" src="biografiko_anastasis.jpg">
+          <div class="name">Αναστάσης Παπαδόπουλος</div>
+          <div class="occupation">DJ</div>
+          <div class="bio">
+            <p>Ο Αναστάσης Παπαδόπουλος είναι DJ και συνεργάτης της Party Vibes μεγάλωσε σε μουσική οικογένεια και απέκτησε εμπειρίες ως DJ από νεαρή ηλικία, έχοντας δουλέψει σε club,live events,party και σε web radio.
+Πέρα από την διασκέδαση του κοινού  επενδύει και στη σύνδεση μαζί του όπου προσαρμόζεται στις  απαιτήσεις της κάθε περίστασης δίνοντας έμφαση στις αψεγάδιαστες μίξεις και στον μοντέρνο ήχο   απογειώνοντας έτσι  την διασκέδαση.
+            </p>
+          </div>
+        </div>
+        <div class="biography-card">
+          <img class="profile-image" src="biografiko_kostas.jpg">
+          <div class="name">Κωνσταντίνος Μαντούδης (DJ Mant)</div>
+          <div class="occupation">DJ</div>
+          <div class="bio">
+            <p>Ο Κωνσταντίνος Μαντούδης είναι DJ και συνεργάτης της Party Vibes by George Mitsos. Προκειται για έναν ανερχόμενο με ταχεία εξέλιξη  dj που  μπορεί να εγγυηθεί αξέχαστες και ξεσηκωτικές μουσικές βραδιές. Έχοντας συλλέξει όμορφες εμπειρίες από διάφορα και γνωστά καφέ, μπαρ και κλαμπ της Αθήνας και του Πειραιά, καθώς και από σημαντικές εκδηλώσεις και πάρτυ, διαθέτει μια μεγάλη γκάμα ρεπερτορίου και τις ικανότητες να ξεσηκώσει και να κάνει αξέχαστες τις βραδιές του κοινού.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="biography-column">
+      <div class="biography-row">
+        <div class="biography-card">
+          <img class="profile-image" src="biografiko_mpampis.jpg">
+          <div class="name">Μπάμπης Ευδαίμων</div>
+          <div class="occupation">Συνθέτης/Στιχουργός/Τραγουδιστής</div>
+          <div class="bio">
+            <p>Ο Μπάμπης Ευδαίμων είναι συνθέτης, στιχουργός και τραγουδιστής όπως επίσης και ιδρυτικό μέλος της <b>4MusicEvents</b>.
+                Παρά το νεαρό της ηλικίας του έχει ήδη κυκλόφορησει 2 single σε δικούς του στίχους και μουσική και έχει τουλάχιστον 500 ακόμα τραγούδια στο συρτάρι του έτοιμα προς κυκλοφορία.
+            </p>
+          </div>
+        </div>
+        <div class="biography-card">
+          <img class="profile-image" src="biografiko_panagiotis.jpg">
+          <div class="name">Παναγιώτης Μπάσης</div>
+          <div class="occupation">Συνθέτης/Στιχουργός/Τραγουδιστής</div>
+          <div class="bio">
+            <p>Ο Παναγίωτης Μπάσης είναι συνθέτης, στιχουργός και τραγουδιστής όπως επίσης και ιδρυτικό μέλος της <b>4MusicEvents</b>.
+                Έχει σπουδές κλασσικού πιάνου και ασχολείται με την σύνθεση και την παραγωγή μουσικής για περισσότερα από 25 χρόνια, καθώς από πολύ μικρή ηλικία άρχισε να συνθέτει τις δικές του πρωτότυπες μελωδίες στο πιάνο.
+            </p>
+          </div>
+        </div>
+        </div>  
+    </div>
+    <div class="biography-column">
+      <div class="biography-row">
+        <div class="biography-card">
+          <img class="profile-image" src="biografiko_giannis_skrepetos.jpg">
+          <div class="name">Γιάννης Σκρεπετός</div>
+          <div class="occupation">Συνθέτης/Τραγουδιστής</div>
+          <div class="bio">
+            <p>Ο Γιάννης Σκρεπετός είναι συνθέτης και τραγουδιστής καθώς και η νεότερη προσθήκη της 4Music Events. Ηδη απο μικρή ηλικία άρχισε να ντύνει στίχους με δικές του μελωδίες. Έχει συνθέσει ήδη εκατοντάδες τραγούδια  περιμένοντας την κατάλληλη στιγμή να τα παρουσιάσει στο κοινό.
+        </p>
+          </div>
+        </div>
+        </div>  
+    </div>
+    <div class="custom-paragraph-mobile" style="background-color:transparent; color: white; text-align:center;padding:50px 0px;text-align: justify; font-size: 1.5em;" id="weddingsong">
+      <h3 style="text-align:center; font-size: 2em;">Γιατί Best Karaoke Party;</h3><br>
+      <p>
+        Η εμπειρία μας αλλά και η διάθεση μας για να περνάμε καλά, σας υπόσχονται το καλύτερο Karaoke Party που έχετε πάει ποτέ. Ένα φαντασμαγορικό show, στο οποίο θα διασκεδάσετε με την ψυχή σας, θα χορέψετε, θα κλάψετε απο τα γέλια και θα βρείτε όλα τα τελευταία hits που κυκλοφορούν για να τα ... εκτελέσετε, με τον δικό σας μοναδικό τρόπο. <br> Με πολλή μουσική, live πρόγραμμα, DJ Set αλλα και αρκετές εκπλήξεις ένα είναι το σίγουρο... Το Karaoke Party by 4MusicEvents θα σας μείνει αξέχαστο.</p>
+    </div>
+</div>
+<footer>
+  <footer>
+    <div class="footer-container indentation" id="footer">
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>Email: partyvibes.gm@gmail.com</p>
+        <p>Phone: 6938950982</p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com/party_vibes_by_georgemitsos"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Party Vibes by George Mitsos. All rights reserved.</p>
+      <p style="display: inline;">Developed By<p style="letter-spacing: 3px;-webkit-text-fill-color: black; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: white; display: inline;"> Βασίλης Δούναβης</p> , Designed By<p style="letter-spacing: 3px;-webkit-text-fill-color: black; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: white; display: inline;"> Ανθή Κασάπη</p>.</p>
+    </div>
+    <img src="FooterBG.webp" class="FooterBackground">
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
