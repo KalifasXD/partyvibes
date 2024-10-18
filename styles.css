@@ -73,6 +73,36 @@ body {
 }
 }
 
+@media (max-width: 768px) {
+  .reviews-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .reviews-section h3 {
+    font-size: 1.6rem;
+  }
+
+  .review-item p {
+    font-size: 12px;
+  }
+
+  .prev-button, .next-button {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    margin: 0 3vw;
+  }
+
+  .review-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .rating {
+    font-size: 20px;
+  }
+}
+
 .reviews-section {
   text-align: center;
   height: 100vh;
@@ -557,16 +587,15 @@ footer {
 
   #neon .word {
     display: block; /* Force each word to appear on its own line */
-    margin: 0 auto; /* Center align */
+    margin: 50px 0; /* Center align */
   }
 
   #neon {
     font-size: 20vw; /* Optional: Adjust font size for mobile */
-    line-height: 50px;
   }
 
   #neon::after {
-    max-width: 100% !important; /* Adjust width of the line under the text for smaller screens */
+    width: 100% !important;
   }
 
  .biography-note-phriends {
