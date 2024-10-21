@@ -1,21 +1,57 @@
 $(document).ready(function() {
-  let currentReviewIndex = 0;
   const reviews = document.querySelectorAll('.review-item');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
 
-  document.querySelector('.next-button').addEventListener('click', () => {
-      reviews[currentReviewIndex].style.display = 'none'; // Hide current review
-      currentReviewIndex = (currentReviewIndex + 1) % reviews.length; // Move to next review
-      reviews[currentReviewIndex].style.display = 'block'; // Show next review
+  let currentReviewIndex = 0;
+  let isAnimating = false;
+
+  // Function to show a specific review with animation
+  function showReview(newIndex, direction) {
+    if (isAnimating || newIndex === currentReviewIndex) return; // Prevent multiple clicks during animation
+
+    isAnimating = true;
+    const currentReview = reviews[currentReviewIndex];
+    const nextReview = reviews[newIndex];
+
+    // Remove active class from the current review
+    currentReview.classList.remove('active');
+
+    // Add sliding classes based on direction
+    if (direction === 'next') {
+      currentReview.classList.add('slide-out-left');
+      nextReview.classList.add('slide-in-right');
+    } else {
+      currentReview.classList.add('slide-out-right');
+      nextReview.classList.add('slide-in-left');
+    }
+
+    // Make the new review active
+    nextReview.classList.add('active');
+
+    // Remove classes after the animation completes
+    setTimeout(() => {
+      currentReview.classList.remove('slide-out-left', 'slide-out-right');
+      nextReview.classList.remove('slide-in-left', 'slide-in-right');
+      currentReviewIndex = newIndex;
+      isAnimating = false;
+    }, 500); // Matches the CSS transition duration
+  }
+
+  // Initialize by showing the first review
+  reviews[currentReviewIndex].classList.add('active');
+
+  // Event listener for next button
+  nextButton.addEventListener('click', () => {
+    const nextIndex = (currentReviewIndex + 1) % reviews.length;
+    showReview(nextIndex, 'next');
   });
 
-  document.querySelector('.prev-button').addEventListener('click', () => {
-      reviews[currentReviewIndex].style.display = 'none'; // Hide current review
-      currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length; // Move to previous review
-      reviews[currentReviewIndex].style.display = 'block'; // Show previous review
+  // Event listener for previous button
+  prevButton.addEventListener('click', () => {
+    const prevIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
+    showReview(prevIndex, 'prev');
   });
-
-  // Display the first review initially
-  reviews[currentReviewIndex].style.display = 'block';
 });
 
 
