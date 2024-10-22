@@ -334,7 +334,7 @@ body {
   font-size: clamp(12px, 2vw + 0.5rem, 16px); /* Responsive font size */
   font-style: italic;
   line-height: 1.4; /* Compact line height */
-  text-align: left; /* Align text to the left */
+  text-align: center; /* Align text to the left */
   margin: 0; /* Remove margin */
   padding: 0; /* Remove padding */
 }
