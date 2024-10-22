@@ -39,18 +39,76 @@ body {
   grid-template-columns: repeat(4, 1fr); /* 4 images per row */
   gap: 20px; /* Space between the images */
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px 5%; /* Margin to add space from the sides (5% on each side) */
 }
 
+.thumbnail-portfolio-container {
+  position: relative; /* Position relative to contain the shine */
+}
+
+/* Shine Effect */
+.thumbnail-portfolio-container figure {
+  position: relative;
+}
+
+.thumbnail-portfolio-container figure::before {
+  position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 100%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 100%;
+	}
+}
+
+/* Shine animation on hover */
+.thumbnail-portfolio-container figure:hover::before {
+  -webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+/* Reset shine on hover out */
+.thumbnail-portfolio-container figure::before {
+  transition: left 0.75s ease-in-out;
+}
+
+/* Scale effect on hover */
 .thumbnail-portfolio {
   width: 100%;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transition for hover effects */
 }
 
 .thumbnail-portfolio:hover {
-  transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
 }
 
 /* Popup Style */
@@ -65,12 +123,16 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
+  overflow: hidden; /* Prevent overflow */
 }
 
 .popup-content-portfolio {
   margin: auto;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 90%; /* Adjust max-width to avoid cropping */
+  max-height: 90%; /* Keep the max height */
+  display: block; /* Ensure it's a block element */
+  width: auto; /* Allow width to adjust to the image's natural size */
+  height: auto; /* Allow height to adjust to the image's natural size */
 }
 
 .counter-portfolio {
@@ -92,20 +154,6 @@ body {
 }
 
 .close-portfolio:hover {
-  color: #bbb;
-}
-
-/* Maximize Button */
-.maximize-portfolio {
-  position: absolute;
-  top: 10px;
-  right: 80px;
-  font-size: 25px;
-  color: white;
-  cursor: pointer;
-}
-
-.maximize-portfolio:hover {
   color: #bbb;
 }
 
@@ -135,14 +183,31 @@ body {
   color: #bbb;
 }
 
+/* Responsive Styles */
 @media screen and (max-width: 700px) {
+  .gallery-portfolio {
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row on small screens */
+  }
+
+  .popup-content-portfolio {
+    padding: 0 15%; /* Reduced padding for smaller screens */
+  }
+
   .prev-portfolio, .next-portfolio {
-      font-size: 20px;
-      padding: 8px;
+    font-size: 20px; /* Smaller buttons */
+    padding: 8px;
   }
 }
 
+@media screen and (max-width: 480px) {
+  .gallery-portfolio {
+    grid-template-columns: 1fr; /* 1 image per row on extra small screens */
+  }
 
+  .popup-content-portfolio {
+    padding: 0 10%; /* Further reduced padding for extra small screens */
+  }
+}
 
 
 .dropdown-menu {

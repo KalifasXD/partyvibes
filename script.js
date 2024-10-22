@@ -85,10 +85,15 @@ const popupPortfolio = document.getElementById("popup-portfolio");
 const popupImagePortfolio = document.getElementById("popup-img-portfolio");
 const counterPortfolio = document.getElementById("image-counter-portfolio");
 const thumbnailsPortfolio = document.querySelectorAll(".thumbnail-portfolio");
-let isMaximized = false; // Track whether the image is maximized or not
 
 // Extract image sources dynamically from HTML
 let imagesPortfolio = Array.from(thumbnailsPortfolio).map(img => img.src);
+
+thumbnailsPortfolio.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', () => {
+        openPopupPortfolio(index);
+    });
+});
 
 function openPopupPortfolio(index) {
     currentIndexPortfolio = index;
@@ -114,38 +119,7 @@ function changeImagePortfolio(direction) {
 // Close button functionality
 document.querySelector(".close-portfolio").addEventListener("click", () => {
     popupPortfolio.style.display = "none";
-    isMaximized = false; // Reset maximized state on close
-    resetImageSize();
 });
-
-// Maximize button functionality (toggle full-screen)
-document.querySelector(".maximize-portfolio").addEventListener("click", () => {
-    toggleMaximizeImage();
-});
-
-// Toggle maximize function
-function toggleMaximizeImage() {
-    if (!isMaximized) {
-        popupImagePortfolio.style.position = "fixed";
-        popupImagePortfolio.style.top = "0";
-        popupImagePortfolio.style.left = "0";
-        popupImagePortfolio.style.width = "100vw";
-        popupImagePortfolio.style.height = "100vh";
-        popupImagePortfolio.style.objectFit = "contain"; // Ensure the image scales correctly
-        popupImagePortfolio.style.transition = "all 0.3s ease";
-        isMaximized = true;
-    } else {
-        resetImageSize();
-    }
-}
-
-function resetImageSize() {
-    popupImagePortfolio.style.position = "relative";
-    popupImagePortfolio.style.width = "80%";
-    popupImagePortfolio.style.height = "auto";
-    popupImagePortfolio.style.transition = "all 0.3s ease";
-    isMaximized = false;
-}
 
 // Handle left/right arrow key presses for navigation
 window.addEventListener("keydown", (event) => {
@@ -153,8 +127,8 @@ window.addEventListener("keydown", (event) => {
         changeImagePortfolio(-1);
     } else if (event.key === "ArrowRight") {
         changeImagePortfolio(1);
-    } else if (event.key === "Escape" && isMaximized) {
-        resetImageSize(); // Exit maximize mode if Escape is pressed
     }
 });
+
+
 
