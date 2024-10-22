@@ -45,7 +45,6 @@ body {
 .Gallery-Outer {
   border: 1px solid #ff00aa;
   background-color:rgb(20, 30, 39, 0.85);
-  max-width: 100vw;
 }
 
 .thumbnail-portfolio-container {
@@ -193,6 +192,7 @@ figure:hover+span {
 @media screen and (max-width: 700px) {
   .gallery-portfolio {
     grid-template-columns: repeat(2, 1fr); /* 2 images per row on small screens */
+    margin: 0 5%;
   }
 
   .popup-content-portfolio {
@@ -208,6 +208,11 @@ figure:hover+span {
 @media screen and (max-width: 480px) {
   .gallery-portfolio {
     grid-template-columns: 1fr; /* 1 image per row on extra small screens */
+  }
+
+  .thumbnail-portfolio{
+    width: 400px;
+    height: 275px;
   }
 
   .popup-content-portfolio {
