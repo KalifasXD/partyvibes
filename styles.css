@@ -1233,7 +1233,7 @@ h2 {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    max-width: 1000px;
+    max-width: 90%;
     margin: 50px auto;
 }
 .biography-card {
