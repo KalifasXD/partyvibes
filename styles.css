@@ -103,12 +103,10 @@ figure:hover+span {
 .thumbnail-portfolio {
   width: 100%;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s; /* Add transition for hover effects */
 }
 
 .thumbnail-portfolio:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transform: scale(1.05);
 }
 
 /* Popup Style */

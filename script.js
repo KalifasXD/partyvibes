@@ -14,28 +14,38 @@ $(document).ready(function() {
     const currentReview = reviews[currentReviewIndex];
     const nextReview = reviews[newIndex];
 
-    // Remove active class from the current review
-    currentReview.classList.remove('active');
-
-    // Add sliding classes based on direction
+    // Step 1: Slide out the current review
     if (direction === 'next') {
       currentReview.classList.add('slide-out-left');
-      nextReview.classList.add('slide-in-right');
     } else {
       currentReview.classList.add('slide-out-right');
-      nextReview.classList.add('slide-in-left');
     }
 
-    // Make the new review active
-    nextReview.classList.add('active');
-
-    // Remove classes after the animation completes
+    // Wait for the slide-out animation to complete before sliding in the next review
     setTimeout(() => {
-      currentReview.classList.remove('slide-out-left', 'slide-out-right');
-      nextReview.classList.remove('slide-in-left', 'slide-in-right');
-      currentReviewIndex = newIndex;
-      isAnimating = false;
-    }, 500); // Matches the CSS transition duration
+      // Remove the old review's active class and slide-out classes
+      currentReview.classList.remove('active', 'slide-out-left', 'slide-out-right');
+
+      // Step 2: Slide in the next review
+      if (direction === 'next') {
+        nextReview.classList.add('slide-in-left');
+      } else {
+        nextReview.classList.add('slide-in-right');
+      }
+
+      // Add the active class to the new review
+      nextReview.classList.add('active');
+
+      // Wait for the slide-in animation to complete
+      setTimeout(() => {
+        // Remove slide-in classes after animation completes
+        nextReview.classList.remove('slide-in-left', 'slide-in-right');
+
+        // Update the current review index
+        currentReviewIndex = newIndex;
+        isAnimating = false;
+      }, 200); // Wait for slide-in to complete
+    }, 350); // Wait for slide-out to complete
   }
 
   // Initialize by showing the first review
@@ -53,6 +63,8 @@ $(document).ready(function() {
     showReview(prevIndex, 'prev');
   });
 });
+
+
 
 $(document).ready(function() {
    // Detect if the user is on a mobile device
