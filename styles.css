@@ -389,7 +389,6 @@ body {
 /* QUICK LINKS */
 
 .quick-links{
-  
   width: 100%; /* Full width */
   padding: 40px 0;
   border: 1px solid rgb(255, 0, 170, 1);
@@ -432,7 +431,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column; /* Arrange children in a column */
-  height: 470px; /* Make sure the div takes the full height of its parent */
+  height: 400px; /* Make sure the div takes the full height of its parent */
   padding: 10px; /* Optional: add some padding */
   position: relative; /* Required for absolute positioning of the link */
 }
