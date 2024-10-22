@@ -107,8 +107,8 @@ figure:hover+span {
 
 /* Scale effect on hover */
 .thumbnail-portfolio {
-  width: 450px;
-  height: 300px;
+  width: 100%; /* Responsive width */
+  height: auto; /* Auto height to maintain aspect ratio */
   cursor: pointer;
 }
 
@@ -195,6 +195,10 @@ figure:hover+span {
     margin: 0 5%;
   }
 
+  .thumbnail-portfolio {
+    height: auto; /* Maintain height auto for responsiveness */
+  }
+
   .popup-content-portfolio {
     padding: 0 15%; /* Reduced padding for smaller screens */
   }
@@ -210,9 +214,8 @@ figure:hover+span {
     grid-template-columns: 1fr; /* 1 image per row on extra small screens */
   }
 
-  .thumbnail-portfolio{
-    width: 350px;
-    height: 245px;
+  .thumbnail-portfolio {
+    height: auto; /* Maintain height auto for responsiveness */
   }
 
   .popup-content-portfolio {
