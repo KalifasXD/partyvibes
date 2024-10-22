@@ -568,7 +568,7 @@ body {
   background-image: url("Wedding_Party.webp");
   min-height: 100vh;
   background-blend-mode: multiply;
-  background-color: rgb(0, 0, 0, 0.25);
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
 .bgimg-3 {
