@@ -165,6 +165,14 @@ body {
   .overlay p {
       font-size: 1em;
   }
+
+  .nav-item.dropdown .dropdown-menu {
+    display: none; /* Keep it hidden initially */
+  }
+  .nav-item.dropdown.show .dropdown-menu {
+      display: block; /* Show when the parent is in show state */
+  }
+
 }
 
 #neon {
@@ -860,23 +868,6 @@ footer {
     margin-bottom: 30px;
   }
 
-  .carousel-inner img, .gif {
-    height: 100vh !important;
-    max-height: none !important;
-    object-fit: cover;
-  }
-
-  .carousel-content .custom-alignment-3 {
-    top: 0% !important;
-    left: 50% !important;
-  }
-
-  .carousel-item .carousel-content {
-    font-size: 1em !important;
-    left: 50% !important;
-    margin: 0 0 0 -10em;
-  }
-
   .custom-paragraph-mobile {
     padding: 30px !important;
   }
@@ -974,43 +965,25 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
-  .polaroid_item {
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-
 }
 
 .navbar {
   position: absolute; /* Used for positing the navbar while maintaining the empty background color and properties*/
 }
 
-.carousel-content {
-  position: absolute;
-  padding: 4em 0em;
-  top: 0%;
-  left: 60%;
-  margin: 0 0 0 -22.5em;
-  font: 700 2.4em !important;
-  display: block;
-  font-size: 2.2vw;
-  text-shadow: 0 0 800px rgba(0,0,0,1);
-  /*
-  background: url("textbackground.jpg") repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
-
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-backface-visibility: hidden; */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Show the dropdown when hovering over the dropdown item */
 }
 
-@-webkit-keyframes aitf {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
+/* Keep dropdown open when mouse is over dropdown menu */
+.dropdown-menu {
+  display: none; /* Initially hide the dropdown */
+  position: absolute; /* Ensure the dropdown doesn't push content */
+  margin-top: -5px; /* Adjust this value to lift it higher */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
 }
 
 .custom-alignment-3 {
