@@ -65,6 +65,10 @@ body {
   position: relative;
   background-color: rgb(0, 0, 0, 0.5);
   background-blend-mode: multiply;
+  background-attachment: fixed; /* Key to the parallax effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .overlay {
@@ -138,6 +142,7 @@ body {
   margin: 0; /* Remove any margins */
   padding: 0; /* Remove padding */
   box-sizing: border-box; /* Ensure the image fits within the allotted space */
+  
 }
 
 .image-gallery img {
@@ -159,6 +164,10 @@ body {
 @media (max-width: 768px) {
   .content-section {
       flex-direction: column;
+  }
+
+  .content-services p {
+    text-align: justify;
   }
 
   .content-services, .image-gallery {
