@@ -44,6 +44,8 @@ body {
 
 .Gallery-Outer {
   border: 1px solid #ff00aa;
+  border-left: 0;
+  border-right: 0;
   background-color:rgb(20, 30, 39, 0.85);
 }
 
@@ -1342,7 +1344,7 @@ h2 {
   border-radius: 15px;
   height: 100%;
   padding: 10px;
-  align-text: center;
+  text-align: center;
 }
 
 /* TABS */
@@ -1493,9 +1495,3 @@ h2 {
   margin: 0 24px;
   text-align: justify;
 }
-
-.gif {
-  object-fit: cover;
-  width: 100%;
-}
-
